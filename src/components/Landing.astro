@@ -1,0 +1,44 @@
+---
+import { Image } from 'astro:assets';
+import mina from '../../public/mina.jpeg'
+---
+<div id="landing-comp">
+    <div id="name-header-top" class="name-header">
+        <h1>Mina</h1>
+    </div>
+    <div id="img-header-center">
+        <Image src={mina} alt="Mina Barimany" />
+    </div>
+    <div id="last-name-header" class="name-header">
+        <h1>Barimany</h1>
+    </div>
+</div>
+
+<style>    
+    #landing-comp {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+        font-family: Destro;
+    }
+
+    img {
+        height: 24rem;
+        width: auto;
+    }
+
+    #img-header-center {
+        display: flex;
+        justify-content: center;
+    }
+
+    .name-header {;
+        display: flex;
+        font-size: 3rem;d
+        text-transform: uppercase;
+    }
+
+    #last-name-header {
+        justify-content: end;
+    }
+</style>
