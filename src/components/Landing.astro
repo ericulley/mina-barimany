@@ -5,29 +5,68 @@ import mina from '../../public/mina.jpeg'
 
 <section id="landing-section">
     <header id="landing-header">
+        <div id="sig-container">
+            <div class="sig-item sig-left">
+                <p class="sig-point">Mental Health Therapist</p>
+                <p class="sig-point">Clinical Supervisor</p>
+                <p class="sig-point">Researcher</p>
+            </div>
+            <hr class="vertical">
+            <div class="sig-item sig-right">
+                <p>Mina Barimany Ph.D., MFT, LPC</p>
+            </div>
+        </div>
     </header>
-    <div id="first-name-header" class="name-header">
-        <h1>Mina</h1>
-    </div>
-    <div id="img-wrapper">
-        <Image src={mina} alt="Mina Barimany" />
-    </div>
-    <div id="last-name-header" class="name-header">
-        <h1>Barimany</h1>
+    <div class="content-container">
+        <div id="first-name-header" class="name-header">
+            <h1>Mina</h1>
+        </div>
+        <div id="img-wrapper">
+            <Image src={mina} alt="Mina Barimany" />
+        </div>
+        <div id="last-name-header" class="name-header">
+            <h1>Barimany</h1>
+        </div>
     </div>
 </section>
 
 <style>    
     #landing-section {
-        display: block;
-        width: 50%;
-        height: 100vh;
-        margin: 0 auto;
         background-color: #0D0D0D;
     }
 
     #landing-header {
+        display: flex;
+        justify-content: end;
         height: 5rem;
+        width: 100%;
+    }
+
+    #sig-container {
+        display: flex;
+        color: #39FF14;
+        font-family: "Prata", serif;
+    }
+
+    .sig-item {
+        padding: 1rem;
+    }
+
+    .sig-point {
+        padding: 0;
+    }
+
+    .vertical {
+        border: 0px;
+        border-left: 2px solid #39FF14;
+        height: 3rem;
+        width: 0px;
+        margin: 1rem 0;
+    }
+
+    .content-container {
+        margin: 0 auto;
+        width: 60%;
     }
 
     img {

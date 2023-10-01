@@ -15,9 +15,26 @@ h1 {
 
 p {
   font-family: "Forum", cursive;
+  padding: 1rem;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+section {
+  height: 100vh;
+  background-color: #0d0d0d;
+  color: #f2f2f2;
+}
+
+section:nth-child(odd) {
+  background-color: #f2f2f2;
+  color: #736868;
+}
+
+.content-container {
+  margin: 0 auto;
+  width: 60%;
 }
