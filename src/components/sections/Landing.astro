@@ -1,6 +1,6 @@
 ---
 import { Image } from 'astro:assets';
-import mina from '../../public/mina.jpeg'
+import minaInChairImg from '../../../public/mina-in-chair.jpg'
 ---
 
 <section id="landing-section">
@@ -22,7 +22,7 @@ import mina from '../../public/mina.jpeg'
             <h1>Mina</h1>
         </div>
         <div id="img-wrapper">
-            <Image src={mina} alt="Mina Barimany" />
+            <Image src={minaInChairImg} alt="Mina Barimany" />
         </div>
         <div id="last-name-header" class="name-header">
             <h1>Barimany</h1>
@@ -73,6 +73,7 @@ import mina from '../../public/mina.jpeg'
         height: 24rem;
         width: auto;
         z-index: 0;
+        border-radius: 1rem;
     }
 
     #img-wrapper {
@@ -90,7 +91,7 @@ import mina from '../../public/mina.jpeg'
 
     #first-name-header {
         justify-content: start;
-        left: 50px;
+        left: 65px;
         color: #FF10F0;
     }
 
